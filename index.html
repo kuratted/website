@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --bg-color: #16181b;
+            --text-main: #ffffff;
+            --text-muted: #b3b3b3;
+            --whatsapp-green: #25D366;
+            --whatsapp-hover: #128C7E;
+            --icon-color: #9aa0a6;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Hero / Product Section */
+        .product-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 80px;
+            align-items: center;
+        }
+
+        .product-image {
+            flex: 1;
+            min-width: 300px;
+            background-color: #2c2f33;
+            border-radius: 12px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            border: 1px solid #3a3f45;
+        }
+
+        .product-details {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .product-title {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            color: var(--text-muted);
+            margin: 0 0 20px 0;
+        }
+
+        .product-description {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--whatsapp-green);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: var(--whatsapp-hover);
+        }
+
+        .whatsapp-btn svg {
+            margin-right: 10px;
+            fill: currentColor;
+            width: 24px;
+            height: 24px;
+        }
+
+        /* "How it works" Section */
+        .how-it-works-section {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 35px;
+            gap: 20px;
+        }
+
+        .feature-icon {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            color: var(--icon-color);
+            margin-top: 2px;
+        }
+
+        .feature-text {
+            font-size: 1.1rem;
+            color: #e8eaed;
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .product-section {
+                flex-direction: column;
+            }
+            .product-image {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Product Hero Section -->
+        <div class="product-section">
+            <div class="product-image">
+                [ Product Image Placeholder ]
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Exclusive Creator Kit</h1>
+                <p class="product-price">₹0</p>
+                <p class="product-description">
+                    Get access to premium content, exclusive discounts, and join a community of creators. Connect directly with us for updates and exclusive drops.
+                </p>
+                
+                <!-- WHATSAPP BUTTON WITH YOUR LINK -->
+                <a href="https://whatsapp.com/channel/0029Va9NjoR2kNFr6Zvwwc0d" class="whatsapp-btn" target="_blank">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    Join our WhatsApp Channel
+                </a>
+            </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #3a3f45; margin-bottom: 60px;">
+
+        <!-- "How it works" Section -->
+        <div class="how-it-works-section">
+            <h2 class="section-title">How it works</h2>
+            
+            <div class="feature-item">
+                <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                <p class="feature-text">Add links to products in your content, including custom affiliate links. Each link must go to a web page with a single shoppable product.</p>
+            </div>
+
+            <div class="feature-item">
+                <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <p class="feature-text">Product web pages usually include a product name, price, image and a way for people to check out.</p>
+            </div>
+
+            <div class="feature-item">
+                <svg class="feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                <p class="feature-text">People can visit the web page from your content.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
